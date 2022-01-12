@@ -240,3 +240,208 @@ h1, h2 {
 h1 {
   font-size: 41px;
 }
+
+h2 {
+  font-size: 34px;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+p {
+  margin: 0 0 11px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+/*смещение вниз при уменьшении ширины*/
+  .support-achievements {
+    display: flex;
+    flex-wrap: wrap;
+  
+  } 
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container .navbar-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .container .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.nav li {
+  position: relative;
+  display: block;
+}
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav li a:hover, .nav li a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+.navbar-collapse {
+  overflow-x: visible;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+}
+.navbar-collapse-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-right: 0;
+  border: 0;
+}
+.navbar-collapse-toggle:focus {
+  outline: 0;
+}
+.navbar-collapse-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-collapse-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media (min-width: 768px) {
+  .navbar-collapse-toggle {
+    display: none;
+  }
+}
+.navbar-nav {
+  margin: 7px -15px;
+}
+.navbar-nav li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .navbar-nav li {
+    float: left;
+  }
+}
+.navbar-btn {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+.navbar-default .navbar-nav li a {
+  color: #777;
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav li a:focus {
+  color: #fff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+  margin-right: 0;
+  background-color: transparent;
+  border: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-default .navbar-collapse {
+  border-color: #fff;
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}
