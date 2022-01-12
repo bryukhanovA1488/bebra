@@ -939,3 +939,190 @@ header#navbar {
   line-height: 1.2;
   color: #838b9c;
 }
+@media (max-width: 1080px) {
+  #block-views-block-testimonials-block-1 .block-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 991px) {
+  #block-views-block-testimonials-block-1 {
+    margin-bottom: 110px;
+    padding-top: 35px;
+  }
+  #block-views-block-testimonials-block-1 .block-title {
+    font-size: 32px;
+  }
+  #block-views-block-testimonials-block-1 .view-content {
+    margin-top: 48px;
+  }
+  #block-views-block-testimonials-block-1 .view-content:after {
+    left: 68px;
+    right: 68px;
+    top: -48px;
+  }
+  #block-views-block-testimonials-block-1 .view-content:before {
+    left: 34px;
+    right: 34px;
+    top: -25px;
+  }
+  #block-views-block-testimonials-block-1 .slick {
+    display: block;
+    padding: 15px;
+  }
+  #block-views-block-testimonials-block-1 .slick-slider, #block-views-block-testimonials-block-1 .slick__arrow {
+    width: 100%;
+    float: none;
+    display: block;
+    padding: 20px 15px;
+    border: 0;
+  }
+  #block-views-block-testimonials-block-1 .slick__arrow {
+    text-align: center;
+    border-top: 1px solid #cdcdcd;
+  }
+  #block-views-block-testimonials-block-1 .slick__arrow-wrapper {
+    display: inline-block;
+  }
+}
+@media (max-width: 767px) {
+  #block-views-block-testimonials-block-1 .block-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: initial;
+  }
+  #block-views-block-testimonials-block-1 .views-field-field-report-text {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 600px) {
+  #block-views-block-testimonials-block-1 .view-content {
+    margin-top: 30px;
+  }
+  #block-views-block-testimonials-block-1 .view-content:after {
+    top: -30px;
+    left: 30px;
+    right: 30px;
+  }
+  #block-views-block-testimonials-block-1 .view-content:before {
+    top: -15px;
+    left: 15px;
+    right: 15px;
+  }
+}
+#block-views-block-blog-block-1 {
+  margin-top: 100px;
+  font-size: 21px;
+}
+#block-views-block-blog-block-1 .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#block-views-block-blog-block-1 .view-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#block-views-block-blog-block-1 .block-title {
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 46px;
+  margin-top: 0;
+  text-align: center;
+  color: #050c33;
+}
+#block-views-block-blog-block-1 .more-link {
+  text-align: center;
+}
+#block-views-block-blog-block-1 .more-link a {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #050c33;
+  padding: 24px 75px;
+  border: 1px solid #cccdd5;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+@media (max-width: 1080px) {
+  #block-views-block-blog-block-1 .block-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 991px) {
+  #block-views-block-blog-block-1 .block-title {
+    font-size: 32px;
+  }
+  #block-views-block-blog-block-1 .more-link a {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 767px) {
+  #block-views-block-blog-block-1 {
+    font-size: 16px;
+  }
+  #block-views-block-blog-block-1 .block-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: initial;
+  }
+  #block-views-block-blog-block-1 .view-content article:nth-of-type(7n) {
+    width: 100%;
+  }
+}
+
+.tariff {
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  padding: 70px 20px 60px;
+  background: #fff;
+  position: relative;
+  margin-left: 24px;
+  transition: all 500ms;
+  max-width: 500px;
+}
+.tariff-row {
+  display: block;
+}
+.tariff-row.row-flex {
+  display: flex;
+}
+.tariff-wrapper {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+.tariff-header {
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 50px;
+}
+.tariff-title {
+  font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f14d32;
+  line-height: 1.3;
+}
+.tariff-price {
+  font-size: 72px;
+  font-weight: bold;
+  color: #050c33;
+  line-height: 1;
+  white-space: nowrap;
+}
+.tariff-price .rub {
+  font-size: 28px;
+  font-weight: 500;
+  vertical-align: text-top;
+  display: inline-block;
+  margin-left: -5px;
+  margin-top: 18px;
+}
