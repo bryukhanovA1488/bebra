@@ -1550,3 +1550,333 @@ header#navbar {
   color: #fff;
   font-size: 14px;
 }
+.field--form-value form .form-type-checkbox {
+  position: relative;
+}
+.field--form-value form .form-type-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  left: 6px;
+  top: 12px;
+  margin: 0;
+}
+.field--form-value form .form-type-checkbox input ~ .custom-checkbox:after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url("/img/checked-icon.svg") no-repeat center;
+  background-size: contain;
+  transition: opacity 200ms, transform 400ms;
+  transform: rotateZ(-30deg);
+  opacity: 0;
+}
+.field--form-value form .form-type-checkbox input:checked ~ .custom-checkbox:after {
+  opacity: 1;
+  transform: initial;
+}
+.field--form-value form .form-type-checkbox input:focus ~ .custom-checkbox {
+  border-color: #f14d34;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f44336;
+}
+.field--form-value form .form-type-checkbox label {
+  padding-left: 38px;
+  font-size: 12px;
+  color: #fff;
+}
+.field--form-value form .form-type-checkbox .custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+@media (max-width: 991px) {
+  .field--form-value form {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .field--form-value form {
+    margin: auto;
+  }
+}
+.field--form-value .btn, .field--form-value .btn:active, .field--form-value .btn:focus {
+  background: #f14d34;
+  border: 2px solid #f14d34;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  outline: 0;
+  box-shadow: none;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 20px 14px;
+  line-height: 1;
+  transition: background 300ms;
+}
+.field--form-value .btn:hover {
+  background: transparent;
+}
+
+.competencies {
+  padding: 100px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.competencies h2 {
+  font-weight: bold;
+  font-size: 42px;
+  color: #050c33;
+  margin: 0 0 20px;
+}
+.competencies-description {
+  margin-bottom: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4f5a73;
+}
+.competencies-row {
+  margin-bottom: 0;
+}
+@media (max-width: 1080px) {
+  .competencies h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .competencies h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .competencies {
+    padding: 50px 0;
+    background-size: cover;
+  }
+  .competencies h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: initial;
+  }
+}
+
+.competency {
+  margin-bottom: 60px;
+  
+  margin-left: 93px;
+
+}
+.competency-icon {
+  position: relative;
+  margin-bottom: 30px;
+}
+.competency-icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 115px;
+  height: 70px;
+  background: url(/img/icon-bg.svg) no-repeat center;
+  background-size: contain;
+  left: -54px;
+  bottom: -4px;
+}
+.competency-body {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4f5a73;
+}
+@media (max-width: 1080px) {
+  .competency-icon {
+    padding-left: 54px;
+  }
+  .competency-icon:before {
+    left: 0;
+  }
+  .competency-body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .competency {
+    margin-bottom: 30px;
+  }
+  .competency-header {
+    text-align: center;
+  }
+  .competency-icon {
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .competency-icon:before {
+    left: -54px;
+  }
+  .competency-icon img {
+    margin: auto;
+  }
+  .competency-body {
+    font-size: 14px;
+    width: 200px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .competency-body br {
+    display: none;
+  }
+}
+
+.advantage {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 20px 20px 40px rgba(5, 12, 51, 0.05);
+  margin-left: -12px;
+  margin-right: -12px;
+  height: 100%;
+  position: relative;
+  padding: 25px 25px 45px;
+  min-height: 292px;
+}
+.advantages h2 {
+  margin-bottom: 55px;
+  text-align: center;
+  color: #050c33;
+  font-weight: bold;
+  font-size: 42px;
+}
+.advantages-row {
+  padding: 0 12px;
+  position: relative;
+  z-index: 20;
+}
+.with-expertise .advantages-row {
+  margin-bottom: -212px;
+}
+.advantage-col {
+  margin-bottom: 5px;
+  margin-right: 43px;
+  max-width: 236px;
+
+}
+.advantage-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.advantage-num {
+  font-weight: bold;
+  font-size: 12px;
+  color: #828a9b;
+  margin-bottom: 20px;
+}
+.advantage-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #050c33;
+  line-height: 1.22;
+  margin-bottom: 15px;
+}
+.advantage-body {
+  position: relative;
+  z-index: 10;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4e5a73;
+  line-height: 1.37;
+}
+@media (max-width: 1080px) {
+  .advantages h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 991px) {
+  .advantages h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .advantage {
+    min-height: 220px;
+  }
+  .advantages h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: initial;
+  }
+}
+
+.expertise {
+  padding: 380px 0 150px;
+  position: relative;
+  background: linear-gradient(254.72deg, rgba(255, 255, 255, 0.276) -114.85%, rgba(255, 255, 255, 0) 69.04%), #040613;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.expertise:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(/img/drupal-logo-2.svg) no-repeat right bottom;
+  background-size: contain;
+  z-index: 10;
+}
+.expertise .container {
+  position: relative;
+  z-index: 15;
+}
+.expertise h2 {
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 53px;
+}
+.expertise-row {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.expertise-img {
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 10;
+  max-width: 735px;
+}
+.expertise-img img {
+  width: 100%;
+  height: auto;
+  transform: translateY(16%);
+}
+.expertise-col {
+  margin-bottom: 30px;
+}
+.expertise-item-body {
+  border-left: 3px solid #f14d34;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  min-height: 88px;
+  height: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  width: 260px;
+  max-width: 100%;
+}
