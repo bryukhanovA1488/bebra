@@ -1036,6 +1036,56 @@
 
                                 </div>
                             </div>
+<template id="modal-template">
+    <transition name="modal">
+        <transition name="fade">
+            <div class="modal-mask">
+                <div class="modal-wrapper">
+                    <div class="modal-container">
+                        <button class="closebtn" @click="$emit('close'), $router.go('-1')">
+                            Закрыть форму
+                        </button>
+
+                        <div class="modal-body">
+                            <slot name="body">
+
+                                <div class="form-block">
+                                    <form class="contact-form" id="formData">
+
+                                        <input type="text" name="firstname" id="firstname" required
+                                            placeholder="Ваше имя" />
+
+                                        <input type="tel" name="tel" id="tel" required
+                                            placeholder="Телефон (988) 123-4567" />
+
+                                        <input type="text" placeholder="Email" required name="email" id="email"
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+
+                                        <textarea rows="3" name="comment" id="comment"
+                                            placeholder="Ваш комментарий"></textarea>
+
+                                        <div class="checkbox">
+
+                                            <input type="checkbox" class="custom-checkbox" id="custom-checkbox"
+                                                name="custom-checkbox" value="yes" />
+                                            <label for="custom-checkbox"><span>Отправляя заявку, я даю согласие на <a
+                                                        href="">обработку своих персональных данных.</a></span></label>
+
+                                        </div>
+
+                                        <input name="submit" class="btn" type="submit" value="Свяжитесь с нами " />
+                                    </form>
+                                </div>
+                            </slot>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </transition>
+    </transition>
+</template>
 
                         </div>
                     </div>
