@@ -2047,4 +2047,69 @@ header#navbar {
   z-index: 5;
   border-radius: 5px;
 }
+.keys-header {
+  margin-top: auto;
+  position: relative;
+  z-index: 10;
+}
+.keys-header h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+  width: 320px;
+  max-width: 100%;
+}
+.keys-header h2 a {
+  color: #fff;
+}
+.keys-content {
+  position: relative;
+  z-index: 10;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #4e5a73;
+}
+.keys-img {
+  position: relative;
+  z-index: 10;
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  margin-left: -40px;
+  margin-right: -40px;
+  margin-top: -40px;
+  border-radius: 5px;
+  box-sizing: content-box;
+}
+.keys-date {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 1.25;
+}
+@media (max-width: 991px) {
+  .keys-header h2 {
+    font-size: 14px;
+  }
+  .keys-wrapper {
+    padding: 15px;
+  }
+  .keys-content {
+    font-size: 12px;
+  }
+  .keys-img {
+    margin-top: -15px;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
 
+.dropdown-menu {
+  background-color: #F14D34;
+  min-width: 60px;
+}
+.dropdown-menu li {
+  margin: 10px;
+}
