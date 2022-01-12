@@ -620,7 +620,47 @@
                     </div>    
                 </section>             
 
-                
+                <modal v-if="showModal" @close="showModal = false">
+                    <h3 slot="header">Оставь заявку!</h3>
+                    <div slot="middle" class="field field--form-popup field--item">
+                        <form class="forms" id="form-popup" action="https://formcarry.com/s/nttOu3U5mc" method="post" accept-charset="UTF-8">
+                            <div class="form-group">
+                                <div class="form-type-textfield form-group">
+                                    <input class="input form-control" type="text" name="Name" placeholder="Ваше имя">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-type-textfield form-group">
+                                    <input class="input required form-control" type="text" name="Telephone" placeholder="Телефон" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-type-email form-group">
+                                    <input class="input form-email required form-control" type="email"  name="Email" placeholder="E-mail" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-type-textarea">
+                                    <div>
+                                        <textarea class="input form-control" name="msg" rows="5" cols="60" placeholder="Ваш комментарий"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="form-item  form-type-checkbox checkbox">
+                                <label class="control-label option form-required">
+                                    <input required="required" class="form-checkbox" type="checkbox" name="consent" value="1">
+                                    <span class="custom-checkbox"></span>Отправляя заявку, я даю согласие на обработку своих персональных данных.</label>
+                            </div>
+                            <div class="form-actions form-group form-wrapper">
+                                <button class="button form-submit-pop btn-primary btn" type="submit" id="edit-submit send" name="submit"
+                                    value="Оставить заявку!" @click="$emit('close')">Оставить заявку!</button>
+                            </div>
+                        </form>
+                    </div>
+                </modal>
+            </div>
+
                 
                 
                 
